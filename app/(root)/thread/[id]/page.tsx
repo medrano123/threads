@@ -37,9 +37,8 @@ const Page = async ({ params }: { params: { id: string }}) => {
                     currentUserId = {JSON.stringify(userInfo._id)}
                 />
             </div>
-			<div className="mt-9 flex flex-col gap-10">
+			<div className="mt-9 flex flex-col gap-6"> {/*might edit this one */}
                 {thread.children.map((childItem: any) => (
-                    
                     <ThreadCard
                         key = {childItem._id}
                         id = {childItem._id}
